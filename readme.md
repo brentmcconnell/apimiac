@@ -53,20 +53,22 @@ In this repository, the `apim` module is used to deploy the API Management servi
     ```sh
     az login
     ```
-
+3. **Set Environment Variables** Create an environment variable for terraform
+   ```bash
+   export ARM_SUBSCRIPTION_ID=###################
+   ```
+   
 3. **Terraform Variables** Create a variables.tfvars file in the root of the repository.
    ```hcl
    # variables.tfvars
-    subscription_id      = "YOUR-SUBSCRIPTION-ID"
-    resource_group_name  = "YOUR-RESOURCE-GROUP-NAME"
+    prefix               = "YOUR-UNIQUE-PREFIX"
     location             = "YOUR-RESOURCE-LOCATION (e.g., East US)"
-    apim_name            = "APIM-INSTANCE-NAME"
-    publisher_name       = "API-PUBLISHER-NAME (e.g., Star Wars API)"
-    publisher_email      = "API-PUBLISHER-EMAIL (e.g., info@swapi.dev)"
-    sku_name             = "APIM-SKU (e.g., Consumption_0)"
-    api_name             = "API-NAME (e.g., swapi)"
-    api_display_name     = "API-DISPLAY-NAME (e.g., Star Wars API)"
-    api_path             = "API-PATH (e.g., swapi)"
+    publisher_name       = "API-PUBLISHER-NAME (e.g., Conference API)"
+    publisher_email      = "API-PUBLISHER-EMAIL (e.g., me@yourdomain.com)"
+    sku_name             = "APIM-SKU (e.g., Developer_1)"
+    api_name             = "API-NAME (e.g., conference)"
+    api_display_name     = "API-DISPLAY-NAME (e.g., Conference API)"
+    api_path             = "API-PATH (e.g., conference)"
     ```
 
 4. **Initialize Terraform**: This will download the necessary providers and modules.
