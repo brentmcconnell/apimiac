@@ -1,9 +1,9 @@
 # Terraform Azure API Management Deployment
 
-This repository contains Terraform code to deploy an Azure API Management (APIM) service for the Star Wars API. The code is structured to use Terraform modules for better organization and reusability.
+This repository contains Terraform code to deploy an Azure API Management (APIM) service for the Conference API. The code is structured to use Terraform modules for better organization and reusability.
 
 ## Explanation of the Code
-This Terraform configuration sets up an Azure API Management service for the Star Wars API. It uses a module to encapsulate the resources related to the API Management service, making the code more organized and reusable. Follow the steps in the "How to Deploy" section to deploy the resources to your Azure subscription.
+This Terraform configuration sets up an Azure API Management service for the Conference API. It uses a module to encapsulate the resources related to the API Management service, making the code more organized and reusable. Follow the steps in the "How to Deploy" section to deploy the resources to your Azure subscription.
 
 ### Structure
 The repository is organized as follows:  
