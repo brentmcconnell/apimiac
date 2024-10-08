@@ -57,6 +57,10 @@ In this repository, the `apim` module is used to deploy the API Management servi
    ```bash
    export ARM_SUBSCRIPTION_ID=###################
    ```
+   or
+   ```powershell
+   $Env:ARM_SUBSCRIPTION_ID="##################"
+   ```
    
 3. **Terraform Variables** Create a variables.tfvars file in the root of the repository.
    ```hcl
